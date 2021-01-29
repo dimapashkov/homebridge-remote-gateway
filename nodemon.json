@@ -1,0 +1,15 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "ts",
+  "ignore": [],
+  "execMap": {
+    "js": "~/.nvm/versions/node/v12.18.3/bin/node"
+  },
+  "exec": "tsc && homebridge -I -D",
+  "signal": "SIGTERM",
+  "env": {
+    "NODE_OPTIONS": "--trace-warnings"
+  }
+}
