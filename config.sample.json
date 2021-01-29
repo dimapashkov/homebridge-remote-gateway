@@ -1,0 +1,24 @@
+{
+  "platform": "RemoteGatewayHomebridgePlugin",
+  "name": "Remote Gateway",
+  "wsConnectionURL": "ws://host:port/url",
+  "wsReconnectInterval": 10,
+  "mqttPort": 1883,
+  "devices": [
+    {
+      "key": "6c74dd79ba6b591a7e3515017b3b15c7",
+      "type": "gate",
+      "displayName": "Gate",
+      "positionTopic": "mqtt topic of gate state (position), message must be valid integer",
+      "switchTopic": "cmnd/rf433/backlog",
+      "switchMessage": "RfSync 1; RfLow 1; RfHigh 1; RfCode #000000;"
+    },
+    {
+      "key": "f04df21343ef19db64bebcdc0af7f617",
+      "type": "switch",
+      "displayName": "Light",
+      "switchTopic": "cmnd/rf433/backlog",
+      "switchMessage": "RfSync 1; RfLow 1; RfHigh 1; RfCode #000000;"
+    }
+  ]
+}

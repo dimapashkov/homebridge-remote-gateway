@@ -1,8 +1,8 @@
 {
   "displayName": "Homebridge Remote Gateway",
   "name": "homebridge-remote-gateway",
-  "version": "0.0.9",
-  "description": "",
+  "version": "0.1.0",
+  "description": "MQTT based controller with WebSocket client",
   "license": "Apache-2.0",
   "repository": "https://github.com/dimapashkov/homebridge-remote-gateway.git",
   "engines": {
