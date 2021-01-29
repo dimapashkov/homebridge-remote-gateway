@@ -1,0 +1,40 @@
+{
+  "displayName": "Homebridge Remote Gateway",
+  "name": "homebridge-remote-gateway",
+  "version": "0.0.9",
+  "description": "",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/dimapashkov/homebridge-remote-gateway.git",
+  "engines": {
+    "node": ">=10.17.0",
+    "homebridge": ">0.4.53"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "watch": "npm run build && npm link && nodemon",
+    "build": "rimraf ./dist && tsc",
+    "npm-publish": "npm run build && npm publish"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "dependencies": {
+    "aedes": "^0.44.1",
+    "helmet": "^4.4.1",
+    "ws": "^7.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "@types/ws": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "tslint": "^6.1.3",
+    "homebridge": "^1.1.2",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "bind-decorator": "^1.0.11"
+  }
+}
